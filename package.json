@@ -1,0 +1,23 @@
+{
+    "name": "marquet",
+    "version": "1.0.0",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c ",
+        "watch": "rollup -c -w",
+        "serve": "http-server ./dist/ -c-1 --cors -S -C cert.pem"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "http-serve": "^1.0.1",
+        "@rollup/plugin-commonjs": "^28.0.2",
+        "@rollup/plugin-node-resolve": "^16.0.0",
+        "@rollup/plugin-terser": "^0.4.4",
+        "rollup": "^4.30.1",
+        "rollup-plugin-multi-input": "^1.5.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4"
+    }
+}
